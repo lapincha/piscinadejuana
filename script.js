@@ -18,7 +18,6 @@ function enviarWA() {
 // INICIALIZACIÓN (se ejecuta al cargar la página)
 // ============================================
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('✅ Página cargada correctamente');
   
   // Exponer la función al ámbito global para usar desde HTML con onclick
   window.enviarWA = enviarWA;
