@@ -21,7 +21,6 @@
 <div class="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <!-- <div class="badge">Abierto todo el año</div> -->
     <h1>La piscina<br><em>de Juana</em></h1>
     <p>Disfruta de un rato agradable en compañía de familia o amigos.</p>
     <div class="ctas">
@@ -44,11 +43,8 @@
 
     <div class="grid-4">
       <div class="card">
-        
         <h3 class="p1">Alquilar</h3>
-        
         <p>Reserva la piscina en exclusiva para tu grupo, evento o sesión privada.</p>
-        <!-- <div class="tarifa"><span>1 hora (hasta X personas)</span><span class="precio">$0.00</span></div> -->
         <div class="tarifa"><span>Día completo</span><span class="precio">$0.00</span></div>
         <a href="#reservar" class="btn btn-solid card-btn">Reservar</a>
       </div>
@@ -69,9 +65,20 @@
 
     <div class="grid-2">
       <div class="mapa">
-        <span></span>
-        <p></p>
-        <div style="width: 100%"><iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=es&amp;q=22.408728,-80.007131+(Piscina%20de%20Juana)&amp;t=k&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.mapsdirections.info/calcular-la-poblacion-en-un-mapa/">Medir población</a></iframe></div>
+        <div style="width: 100%">
+          <iframe 
+            width="300" 
+            height="300" 
+            frameborder="0" 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0" 
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=22.408728,-80.007131+(Piscina%20de%20Juana)&amp;t=k&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            <a href="https://www.mapsdirections.info/calcular-la-poblacion-en-un-mapa/">Mapeo de población</a>
+          </iframe>
+        </div>
+      </div>
+
       <div>
         <div class="info-item">
           <div class="info-icon">📍</div>
@@ -96,46 +103,23 @@
   <path d="M0,25 C480,55 960,0 1440,30 L1440,55 L0,55Z" fill="#fff"/>
 </svg>
 
-<!-- SECCIÓN 3: FORMULARIO WHATSAPP -->
+<!-- SECCIÓN 3: RESERVAR POR WHATSAPP -->
 <section id="reservar">
   <div class="container" style="text-align:center">
     <p class="eyebrow">Contáctanos</p>
     <h2>Reserva ahora</h2>
-    <!--<p class="sub" style="margin:0 auto">Rellena el formulario y recibirás confirmación por WhatsApp en minutos.</p>
+    <p class="sub" style="margin:0 auto">Elige tu método de reserva preferido</p>
 
-    <div class="form-wrap" style="text-align:left">
-      <label for="nombre">Nombre completo</label>
-      <input type="text" id="nombre" placeholder="Ej: Erit">
-
-      <label for="oferta">Tipo de servicio</label>
-      <select id="oferta" onchange="actualizarHorario()">
-        <option value="" disabled selected>Selecciona un servicio...</option>
-        <option value="1">1 hora ($0.00)</option>
-        <option value="dia">Día completo ($0.00)</option>
-      </select>
-
-      <div id="bloque-horario">
-        <label>Horario deseado</label>
-        <div id="fila-horas" class="fila-3">
-          <div>
-            <label for="fecha" class="sublabel">Fecha</label>
-            <input type="date" id="fecha">
-          </div>
-          <div id="col-inicio">
-            <label for="hora-inicio" class="sublabel">Hora de inicio</label>
-            <input type="time" id="hora-inicio" onchange="calcularFin()">
-          </div>
-          <div id="col-fin">
-            <label for="hora-fin" class="sublabel">Hora de fin</label>
-            <input type="time" id="hora-fin" readonly>
-          </div>
-        </div>
-        <p id="hint-horario" class="hint-hora"></p>
-      </div> -->
-
-      <button class="btn-wa" onclick="enviarWA()">💬 Reservar por WhatsApp</button>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:15px; margin-top:30px">
+      <!-- Botón WhatsApp -->
+      <button class="btn-wa" onclick="enviarWA()">
+        💬 Reservar por WhatsApp
+      </button>
       
-      <button class="btn-wa">📱 Reservar por llamada</button>
+      <!-- Botón Llamada -->
+      <button class="btn-wa" onclick="window.location.href='tel:5359638868'">
+        📱 Reservar por llamada
+      </button>
     </div>
   </div>
 </section>
